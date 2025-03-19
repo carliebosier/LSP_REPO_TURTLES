@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"org.howard.edu.lsp.assignment5","c":"IntegerSet","l":"IntegerSet()","u":"%3Cinit%3E()"}];updateSearchResults();
