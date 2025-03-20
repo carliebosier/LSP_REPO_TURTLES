@@ -203,7 +203,15 @@ public class IntegerSet {
      * @param intSetb The other IntegerSet to calculate the complement with.
      */
     public void complement(IntegerSet intSetb) {
-        diff(intSetb);
+        List<Integer> result = new ArrayList<Integer>();
+
+        for (int i = 0; i < intSetb.set.size(); i++) {
+            int item = intSetb.set.get(i);
+            if (!set.contains(item)) {
+                result.add(item);
+            }
+        }
+        set = result;
     }
 
     /**
