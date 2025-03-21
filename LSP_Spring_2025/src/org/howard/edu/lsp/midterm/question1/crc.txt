@@ -1,18 +1,16 @@
 Classes:
 1.	Library: Main part of the system that manages the book’s availability and where it goes (who borrowed), helps librarians keep track of borrowing, returning.
 a.	Responsibilities: keeps track of the availability status of the books, provides a list of available books and borrowed books. 
-b.	Collaborators: Collaborates with book to ensure correct availability status, and the librarian to help manage the availability status and collection of new/removed books. 
+b.	Collaborators: Collaborates with book to ensure correct availability status, and the member to record borrowing. 
 
 2.	Member: A library member who borrows books with limits on the amount of books borrowed at once. 
 a.	Responsibilities: borrows available books, can only borrow up to 3 books at a time, must return borrowed books to ensure correct availability status for library.
-b.	Collaborators: collaborates with  book because they borrow and return the books based on details and collaborates with the library because the action of borrowing and returning changes the library collection.
+b.	Collaborators: collaborates with the library because the action of borrowing and returning changes the library collection.
 
 3.	Books: Represents the books in the library, also maintaining the book’s details such as title, author, and ISBN. 
 a.	Responsibilities: manages book details such as title, author, ISBN, and shares availability status.
-b.	Collaborators: collaborates with member class to process the borrowing and return, and collaborates with the library class to help keep availability status information up to date. 
+b.	Collaborators: none, it does not actively collaborate with other classes 
 
 4.	Librarian: The other main part of the system which includes a librarian who is responsible for managing the library’s book collection, availability, and adding new books or removing outdates/lost ones.
 a.	Responsibilities: can add new books to the collection and remove books that are outdated or lost, based on the list of available books and which books are currently checked out and who has borrowed them.
-b.	Collaborators: collaborates with the library class to add or remove books from the library collection, and collaborates with the book class to manage availability of the book. 
-
-
+b.	Collaborators: collaborates with the library class to add or remove books from the library collection
