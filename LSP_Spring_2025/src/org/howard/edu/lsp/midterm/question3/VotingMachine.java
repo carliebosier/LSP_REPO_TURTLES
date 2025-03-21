@@ -19,7 +19,7 @@ public class VotingMachine {
     
     //adds candidate name
     public boolean addCandidate(String name) {
-        for (Candidate candidate : candidates) {
+        for (Candidate candidate : candidates) {  //website for : function https://www.freecodecamp.org/news/enhanced-for-loops-in-java-how-to-use-foreach-loops-on-arrays/ and https://www.geeksforgeeks.org/difference-between-for-loop-and-enhanced-for-loop-in-java/
             if (candidate.getName().equals(name)) {
                 return false; //returns false if candidate already exists
             }
