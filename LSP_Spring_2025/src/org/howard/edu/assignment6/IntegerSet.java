@@ -1,5 +1,5 @@
 package org.howard.edu.assignment6;
-//Carlie 
+//Carlie Bosier
 
 import java.util.ArrayList;
 import java.util.List;
