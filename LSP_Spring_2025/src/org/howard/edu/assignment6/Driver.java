@@ -1,7 +1,7 @@
 package org.howard.edu.assignment6;
 
 public class Driver {
-	//Carlie Bosier
+	//Carlie 
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
