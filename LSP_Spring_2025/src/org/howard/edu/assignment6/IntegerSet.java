@@ -92,13 +92,13 @@ public class IntegerSet {
     }
 
     /**
-     * Returns the largest item in the set.
+     * Returns the largest item in the set. Throws IntegerSetException if the set is empty.
      * wesbites used: https://stackoverflow.com/questions/12788182/finding-the-largest-value-in-an-arraylist and https://www.geeksforgeeks.org/finding-maximum-element-of-java-arraylist/ and https://www.codecademy.com/resources/docs/java/collections/max and https://www.geeksforgeeks.org/arraylist-contains-java/
      * @return the largest item in the set, or -1 if the set is empty.
      */
-    public int largest() {
+    public int largest() throws IntegerSetException {
         if (set.isEmpty()) {
-            return -1;
+            throw new IntegerSetException("Set is empty, largest item cannot be returned.");
         }
         int largest = set.get(0);
         for (int i = 1; i < set.size(); i++) {
@@ -110,13 +110,13 @@ public class IntegerSet {
     }
 
     /**
-     * Returns the smallest item in the set.
+     * Returns the smallest item in the set. Throws IntegerSetException if the set is empty.
      * websites used: https://www.geeksforgeeks.org/finding-the-minimum-or-maximum-value-in-java-arraylist/ and https://www.tutorialspoint.com/find-minimum-element-of-arraylist-with-java-collections and https://www.baeldung.com/java-collection-min-max
      * @return the smallest item in the set, or -1 if the set is empty.
      */
-    public int smallest() {
+    public int smallest() throws IntegerSetException {
         if (set.isEmpty()) {
-            return -1;
+            throw new IntegerSetException("Cannot find the smallest element in an empty set.");
         }
         int smallest = set.get(0);
         for (int i = 1; i < set.size(); i++) {

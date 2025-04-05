@@ -12,9 +12,18 @@ public class Driver {
         set1.add(3);
         System.out.println("Value of Set1: " + set1.toString());
         
-        //smallest and largest operation 
-        System.out.println("Smallest value in Set1: " + set1.smallest());
-        System.out.println("Largest value in Set1: " + set1.largest());
+        //catches the exception if set is empty in Set1 
+        try {
+            System.out.println("Smallest value in Set1: " + set1.smallest());
+        } catch (IntegerSetException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        try {
+            System.out.println("Largest value in Set1: " + set1.largest());
+        } catch (IntegerSetException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
         
         IntegerSet set2 = new IntegerSet(); //creating IntegerSet2 and adding elements 
         System.out.println("\nAdding elements to Set2");
@@ -22,8 +31,19 @@ public class Driver {
         set2.add(4);
         set2.add(5);
         System.out.println("Value of Set2: " + set2.toString());
-        System.out.println("Smallest value in Set2: " + set2.smallest());
-        System.out.println("Largest value in Set2: " + set2.largest());
+        
+        //catches the exception if set is empty in Set2
+        try {
+            System.out.println("Smallest value in Set2: " + set2.smallest());
+        } catch (IntegerSetException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        try {
+            System.out.println("Largest value in Set2: " + set2.largest());
+        } catch (IntegerSetException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
 
         //union operation
         System.out.println("\nUnion of Set1 and Set2:");
