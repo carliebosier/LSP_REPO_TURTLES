@@ -1,0 +1,3 @@
+Question 4:
+
+In our introduction to design patterns, we learned that design patterns can be very useful in certain scenarios  like creating recyclable code and solutions, but there is a down side with using design patterns.  Sometimes using a design pattern can lead to a more complex pattern to an overall simple  problem. Because there isn’t a standardized system for indexing or organizing patterns that all developers follow, the lack of standardized structure can make it hard for teams of software developers to make a single decision in developing a single, clear architecture. This is why most developers live by the KISS, also known as, keep it simple stupid. 
