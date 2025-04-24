@@ -80,4 +80,7 @@ public class ShoppingCart {
    public boolean removeItem(String itemName) {
        return items.remove(itemName) != null;
    }
+   public int getCartSize() {
+       return items.size();
+   }
 }
